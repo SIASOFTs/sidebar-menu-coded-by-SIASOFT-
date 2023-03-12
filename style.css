@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: "Mada", sans-serif;
+}
+
+body {
+  background-color: #f8b313;
+}
+main {
+  height: 100vh;
+}
+.sidebarmenu_main {
+  max-width: 320px;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #232526, #414345);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar_header {
+  height: 95px;
+  width: 100%;
+  padding: 25px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar_header .logo_box {
+  width: 65px;
+  height: 65px;
+  position: relative;
+}
+.sidebar_header .brand_name {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 1px;
+  width: 150px;
+}
+.sidebar_header .brand_name span {
+  font-family: "Orbitron";
+  color: #f8b313;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.sidebar_header .logo_box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar_menu {
+  width: 100%;
+  flex-grow: 9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar_menu .sidebar_menu_items {
+  width: 100%;
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.button_content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sidebar_menu .submenu_items {
+  width: 100%;
+  height: 0px;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+.sidebar_menu .submenu_items.activeSubMenu {
+  height: auto;
+}
+.sidebar_menu .submenu_items .sidebar_submenu_items {
+  padding: 15px 0 15px 45px;
+}
+.sidebar_menu .submenu_items .sidebar_submenu_items a {
+  color: #ccc;
+  font-size: 0.8rem !important;
+  font-weight: 500;
+  letter-spacing: 2px;
+  position: relative;
+}
+.sidebar_menu .submenu_items .sidebar_submenu_items a::before {
+  position: absolute;
+  left: -15px;
+  top: 30%;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.sidebar_menu .sidebar_menu_items:hover {
+  background-color: #414345;
+}
+
+.sidebar_menu .sidebar_menu_items ion-icon {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-right: 15px;
+}
+.sidebar_menu .sidebar_menu_items .up_icon {
+  margin-left: auto;
+  font-size: 1rem;
+  transform: rotate(0deg);
+}
+.sidebar_menu .sidebar_menu_items .sidebar_menu_buttons {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
